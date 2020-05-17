@@ -1,0 +1,35 @@
+body{
+  background-color: black;
+  color: black;
+  font-family: Product Sans, sans-serif;
+}
+
+.container{
+	width: 30vw;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 30vh;
+	padding: 10vh 10vh 15vh;
+	background-color: white;
+}
+
+.heading{
+	text-align: center;
+	font-weight: 900;
+}
+
+.heading.output{
+	color: #999;
+	font-size: 1.3em;
+}
+
+.answer{
+	line-height: 1.4em;
+	color: #a00000;
+	font-size: 1.5em;
+}
+
+.converter{
+	text-align: center;
+	margin-top: 5vh;
+}

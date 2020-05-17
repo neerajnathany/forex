@@ -1,10 +1,11 @@
 const express = require("express");
 const bodyParser = require('body-parser');
 const http = require('http');
-
+const ejs = require('ejs');
 
 app = express();
 app.use(express.static("public"));
+app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended : true}));
 
 const url = 'http://api.currencylayer.com/live?access_key=b22031f591ef1848e3229c6e23c73712';
@@ -29,7 +30,8 @@ app.post('/', function(req,res){
         var ans = out.quotes[source+currency]*value;
       }
       var output = (Math.round((ans+Number.EPSILON)*100)/100).toLocaleString()
-      res.send("That's approximately "+ output + ' ' + currency);
+      //res.render("That's approximately "+ output + ' ' + currency);
+      res.render('output', {output:output, currency:currency});
     })
   })
 })
