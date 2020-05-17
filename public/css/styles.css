@@ -1,3 +1,5 @@
+@import "reset.css";
+
 body{
   background-color: black;
   color: black;
@@ -5,31 +7,105 @@ body{
 }
 
 .container{
-	width: 30vw;
+	width: 75vw;
 	border-radius: 10px;
 	margin: 0 auto;
 	margin-top: 30vh;
-	padding: 10vh 10vh 15vh;
+	padding: 5vh 5vh 7vh;
 	background-color: white;
 }
 
 .heading{
 	text-align: center;
 	font-weight: 900;
+	font-size: 5.5em;
+	line-height: 1.1em;
 }
 
-.heading.output{
+.output{
 	color: #999;
-	font-size: 1.3em;
+	font-size: 0.6em;
+	line-height: 0.4em;
 }
 
 .answer{
-	line-height: 1.4em;
 	color: #a00000;
-	font-size: 1.5em;
+	font-size: 0.9em;
 }
 
 .converter{
 	text-align: center;
-	margin-top: 5vh;
+	width: 100%;
+	margin: 5vh auto 0;
+}
+
+select{
+	width: 35%;
+	margin-right: 5%;
+	height: 85px;
+	border: 1px solid #333;
+	border-radius: 4px;
+	font-size: 2.5em;
+	padding: 0 6px;
+}
+
+option{
+	font-size: 0.3em;
+}
+
+input.amount{
+	width: 60%;
+	height: 85px;
+	padding: 0 18px;
+	border: 1px solid #333;
+	border-radius: 4px;
+	font-size: 2.5em;
+}
+
+button{
+	display: block;
+	width: 100%;
+	margin: 2vh auto 0;
+	background-color: #4896D8;
+	color: white;
+	text-transform: uppercase;
+	font-family: inherit;
+	font-weight: 600;
+	font-size: 2.5em;
+	letter-spacing: 1px;
+	border: none;
+	border-radius: 4px;
+	padding: 24px 28px;
+	cursor: pointer;
+}
+
+@media screen and (min-width: 70em){
+	.container{
+		width: 30vw;
+		padding: 10vh 10vh 12vh;
+	}
+	.heading{
+		font-size: 1.7em;
+	}
+	.converter{
+		width: 75%;
+		margin-top: 7vh;
+	}
+	select, input.amount{
+		height: 30px;
+		font-size: 1em;
+		padding: 0 4px;
+	}
+	button{
+		font-size: 1em;
+		padding: 10px 14px;
+	}
+	.output{
+		font-size: 0.9em;
+		line-height: auto;
+	}
+	.answer{
+		font-size: 1.2em;
+		line-height: 1.6em;
+	}
 }
