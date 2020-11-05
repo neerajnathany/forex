@@ -1,9 +1,10 @@
 @import "reset.css";
+@import "fonts.css";
 
 body{
   background-color: black;
   color: black;
-  font-family: Product Sans, sans-serif;
+  font-family: 'Circular Std', 'SF Pro Display';
 }
 
 .container{
@@ -20,6 +21,8 @@ body{
 	font-weight: 900;
 	font-size: 5.5em;
 	line-height: 1.1em;
+	color: #900000;
+	letter-spacing: -1.5px;
 }
 
 .output{
@@ -29,7 +32,7 @@ body{
 }
 
 .answer{
-	color: #a00000;
+	color: #900000;
 	font-size: 0.9em;
 	line-height: 0.9em;
 }
@@ -67,7 +70,7 @@ button{
 	display: block;
 	width: 100%;
 	margin: 2vh auto 0;
-	background-color: #4896D8;
+	background-color:  #900000;
 	color: white;
 	text-transform: uppercase;
 	font-family: inherit;
@@ -86,7 +89,7 @@ button{
 		padding: 10vh 10vh 12vh;
 	}
 	.heading{
-		font-size: 1.7em;
+		font-size: 2.2em;
 	}
 	.converter{
 		width: 75%;
